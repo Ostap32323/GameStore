@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GameZone — Кошик</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="search-cart">
+        <input type="text" placeholder="🔍 Пошук..." />
+        <a href="index.html" class="back-btn">Назад</a>
+    </div>
+  </aside>
+
+  <main class="basket-main">
+    <h1 class="basket-title">Ваш кошик</h1>
+
+    <section class="basket-item">
+      <img src="The_Witcher_3.jpg" alt="The Witcher 3" />
+      <div class="basket-info">
+        <h2>The Witcher 3</h2>
+        <div class="basket-controls">
+          <label for="qty-witcher3">Кількість:</label>
+          <select id="qty-witcher3" name="qty-witcher3">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+          <span class="basket-price">₴499</span>
+        </div>
+      </div>
+    </section>
+
+    <button class="checkout-btn">Оформити замовлення</button>
+  </main>
+</body>
+</html>
