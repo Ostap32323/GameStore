@@ -15,25 +15,28 @@
   </aside>
 
   <main class="basket-main">
-    <h1 class="basket-title">Ваш кошик</h1>
+  <h1 class="basket-title">Ваш кошик</h1>
 
-    <section class="basket-item">
-      <img src="The_Witcher_3.jpg" alt="The Witcher 3" />
-      <div class="basket-info">
-        <h2>The Witcher 3</h2>
-        <div class="basket-controls">
-          <label for="qty-witcher3">Кількість:</label>
-          <select id="qty-witcher3" name="qty-witcher3">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-          </select>
-          <span class="basket-price">₴499</span>
-        </div>
-      </div>
-    </section>
+  <!-- Контейнер для всіх ігор -->
+  <div id="basket-items-container"></div>
 
-    <button class="checkout-btn">Оформити замовлення</button>
-  </main>
+  <section class="basket-item" id="basket-template" style="display: none;">
+  <img src="" alt="" class="basket-img" />
+  <div class="basket-info">
+    <h2 class="basket-name"></h2>
+    <div class="basket-controls">
+      <span class="basket-price"></span>
+      <button class="remove-btn">Видалити</button>
+    </div>
+  </div>
+</section>
+
+
+  <h2 id="total">0₴</h2>
+  <button id="checkout-btn" class="checkout-btn">Оформити замовлення</button>
+</main>
+    
+  
 </body>
+<script src="basket.js"></script>
 </html>
